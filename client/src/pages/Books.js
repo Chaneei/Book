@@ -10,6 +10,7 @@ const Books = () => {
       try {
         const res = await axios.get("http://localhost:8800/books");
         setBooks(res.data);
+        console.log(books);
       } catch (err) {
         console.log(err);
       }
@@ -28,14 +29,16 @@ const Books = () => {
   return (
     <>
       <div className="book-container">
-        <h1 className="book-title">Book Store</h1>
+        <h1 className="book-title">
+          <img src="https://velog.velcdn.com/images/minhyepark-dev/post/ecfb987e-f0cb-43c3-86f9-bffa58e9ba1c/blog_book2.jpg" />
+        </h1>
         <div className="books">
           {books.map((book) => (
             <div className="book" key={book.id}>
               {book.cover && <img src={book.cover} alt="" />}
               <h2>{book.title}</h2>
-              <p>{book.desc.slice(0, 30)}</p>
-              <span>{book.price}</span>
+              <p>{book.desc.slice(0, 50)}</p>
+              <span>{book.price}원</span>
               <div className="btn-wrap">
                 <button className="duBtn" onClick={() => handleDelete(book.id)}>
                   삭제하기

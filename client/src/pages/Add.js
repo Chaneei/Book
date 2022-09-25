@@ -34,7 +34,7 @@ const Add = () => {
           onChange={handleChange}
           name="title"
         />
-        <textarea
+        <input
           type="text"
           placeholder="desc"
           onChange={handleChange}

@@ -1,0 +1,82 @@
+@import "../app.scss";
+.book-container {
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  padding: 3rem 0;
+  background-color: #ffffffd5;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  .book-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .books {
+    display: flex;
+    flex-wrap: wrap;
+    .book {
+      box-sizing: border-box;
+      padding: 0.5rem;
+      margin: 1%;
+      width: 48%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 80%;
+      }
+      h2 {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        font-size: 0.95rem;
+        color: var(--font-color);
+      }
+      span {
+        font-size: 0.9rem;
+        color: var(--span-color);
+      }
+      .btn-wrap {
+        margin: 0.5rem 0;
+        .duBtn {
+          padding: 0.2rem;
+          border: none;
+          background-color: var(--btn-color);
+          color: var(--btn-font-color);
+          border-radius: 0.3rem;
+          margin: 0 0.2rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .addBtn {
+    margin: 3rem 0 0 0;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--btn-color);
+    width: 50%;
+  }
+  .scrollBtn {
+    position: absolute;
+    color: var(--btn-font-color);
+    top: 5%;
+    right: -10%;
+    transform: rotate(90deg);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .scrollBtn {
+    display: none;
+  }
+}

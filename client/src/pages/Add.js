@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import "../styles/add.scss";
 const Add = () => {
   const navigate = useNavigate();
   const [book, setBook] = useState({
@@ -25,35 +25,39 @@ const Add = () => {
     }
   };
   return (
-    <div className="add-form">
-      <h1>책 추가하기</h1>
-      <input
-        type="text"
-        placeholder="title"
-        onChange={handleChange}
-        name="title"
-      />
-      <input
-        type="text"
-        placeholder="desc"
-        onChange={handleChange}
-        name="desc"
-      />
-      <input
-        type="number"
-        placeholder="price"
-        onChange={handleChange}
-        name="price"
-      />
-      <input
-        type="text"
-        placeholder="cover"
-        onChange={handleChange}
-        name="cover"
-      />
+    <>
+      <div className="add-form">
+        <h1>책 추가하기</h1>
+        <input
+          type="text"
+          placeholder="title"
+          onChange={handleChange}
+          name="title"
+        />
+        <textarea
+          type="text"
+          placeholder="desc"
+          onChange={handleChange}
+          name="desc"
+        />
+        <input
+          type="number"
+          placeholder="price"
+          onChange={handleChange}
+          name="price"
+        />
+        <input
+          type="text"
+          placeholder="cover"
+          onChange={handleChange}
+          name="cover"
+        />
 
-      <button onClick={handleClick}>추가하기</button>
-    </div>
+        <button className="formBtn" onClick={handleClick}>
+          추가하기
+        </button>
+      </div>
+    </>
   );
 };
 

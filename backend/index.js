@@ -39,6 +39,17 @@ app.post("/books", (req, res) => {
   });
 });
 
+//데이터 삭제하기
+app.delete("/books/:id", (req, res) => {
+  const bookId = req.params.id;
+  const q = "DELETE FROM books WHERE id = ?";
+
+  db.query(q, [bookId], (err, data) => {
+    if (err) return res.json(err);
+    return res.json("책 삭제하기 성공");
+  });
+});
+
 app.listen(8800, () => {
   console.log("Connected to Backend!");
 });

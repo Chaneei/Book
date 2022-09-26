@@ -4,13 +4,12 @@ import axios from "axios";
 import "../styles/book.scss";
 const Books = () => {
   const [books, setBooks] = useState([]);
-  const [more, setMore] = useState(4);
+  const [more, setMore] = useState(2);
   useEffect(() => {
     const fetchAllBooks = async () => {
       try {
         const res = await axios.get("http://localhost:8800/books");
         setBooks(res.data);
-        console.log(books);
       } catch (err) {
         console.log(err);
       }
@@ -33,31 +32,38 @@ const Books = () => {
           <img src="https://velog.velcdn.com/images/minhyepark-dev/post/ecfb987e-f0cb-43c3-86f9-bffa58e9ba1c/blog_book2.jpg" />
         </h1>
         <div className="books">
-          {books.map((book) => (
+          {books.slice(0, more).map((book) => (
             <div className="book" key={book.id}>
               {book.cover && <img src={book.cover} alt="" />}
               <h2>{book.title}</h2>
-              <p>{book.desc.slice(0, 50)}</p>
+              <p>{book.desc.slice(0, 50)}...</p>
               <span>{book.price}원</span>
               <div className="btn-wrap">
                 <button className="duBtn" onClick={() => handleDelete(book.id)}>
-                  삭제하기
+                  😥 Delete
                 </button>
                 <button className="duBtn">
                   <Link className="link" to={`/update/${book.id}`}>
-                    수정하기
+                    😅 Update
                   </Link>
                 </button>
               </div>
             </div>
           ))}
         </div>
-        {/* <button onClick={() => setMore(more + 2)}>펼치기</button> */}
-        <button className="addBtn">
-          <Link to="/add" className="link">
-            책 추가하기
-          </Link>
-        </button>
+        <div className="addmore-wrap">
+          <span
+            className={more < books.length ? `moreBtn` : `noBtn`}
+            onClick={() => setMore(more + 2)}
+          >
+            👇
+          </span>
+          <button className="addBtn">
+            <Link to="/add" className="link">
+              😊 독후감 쓰기
+            </Link>
+          </button>
+        </div>
       </div>
     </>
   );

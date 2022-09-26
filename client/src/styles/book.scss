@@ -28,6 +28,7 @@
       padding: 0.5rem;
       margin: 1%;
       width: 48%;
+      height: 33rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -40,9 +41,10 @@
         margin: 0.5rem 0;
       }
       p {
+        width: 90%;
         font-size: 0.9rem;
         color: var(--font-color);
-        word-break: keep-all;
+        word-break: break-all;
         text-align: center;
       }
       span {
@@ -64,14 +66,41 @@
       }
     }
   }
-  .addBtn {
-    margin: 3rem 0 0 0;
-    border: none;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    background-color: var(--btn-color);
-    width: 50%;
+  .addmore-wrap {
+    width: 100%;
+    position: relative;
+    padding: 1.5rem 0;
+    overflow: hidden;
+    .moreBtn {
+      position: absolute;
+      bottom: 6%;
+      right: 4%;
+      color: var(--btn-font-color);
+      font-size: 1.5rem;
+      cursor: pointer;
+
+      &:hover {
+        bottom: 0;
+        transition: all 0.2s ease;
+      }
+    }
+    .noBtn {
+      display: none;
+    }
+    .addBtn {
+      margin: 1rem 0 0 0;
+      border: none;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      background-color: var(--btn-color);
+      position: absolute;
+      width: 40%;
+      left: 50%;
+      bottom: 5%;
+      transform: translateX(-50%);
+    }
   }
+
   .scrollBtn {
     position: absolute;
     color: var(--btn-font-color);

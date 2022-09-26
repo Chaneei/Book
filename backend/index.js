@@ -24,6 +24,17 @@ app.get("/books", (req, res) => {
   });
 });
 
+//선택된 데이터 가져오기
+app.get("/books/:id", (req, res) => {
+  const bookId = req.params.id;
+  const q = "SELECT * FROM books WHERE id = ?";
+
+  db.query(q, [bookId], (err, data) => {
+    if (err) return res.json(err);
+    return res.json(data);
+  });
+});
+
 //데이터 입력하기
 app.post("/books", (req, res) => {
   const q = "INSERT INTO books (`title`,`desc`,`price`,`cover`) VALUES (?)";

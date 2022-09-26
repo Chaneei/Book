@@ -32,21 +32,21 @@
 MySQL에 저장된 데이터를 불러오고 내가 작성하고 수정하고 삭제할 수 있게 구성했습니다.
 
 ## ✔ 제작 과정
-<a href="https://berry-aries-40a.notion.site/MySQL-546ab0fd995b428b9a955354936a1c75" target="_blanket">MySQL Setting</a>
+<a href="https://berry-aries-40a.notion.site/MySQL-546ab0fd995b428b9a955354936a1c75">MySQL Setting</a>
 <br/>
-<a href="https://berry-aries-40a.notion.site/Book-1-3ea1c42f5f3e4230b1287b5e1301b60d" target="_blanket">Book #1</a>
+<a href="https://berry-aries-40a.notion.site/Book-1-3ea1c42f5f3e4230b1287b5e1301b60d">Book #1</a>
 <br/>
-<a href="https://berry-aries-40a.notion.site/Book-2-f58cf7a365b84b92b638794046ad46ee" target="_blanket">Book #2</a>
+<a href="https://berry-aries-40a.notion.site/Book-2-f58cf7a365b84b92b638794046ad46ee">Book #2</a>
 <br/>
-<a href="https://berry-aries-40a.notion.site/Book-3-fd1d3fca71e54b089357db8cbcef5167" target="_blanket">Book #3</a>
+<a href="https://berry-aries-40a.notion.site/Book-3-fd1d3fca71e54b089357db8cbcef5167">Book #3</a>
 <br/>
-<a href="https://berry-aries-40a.notion.site/Book-4-ac978d324d5a4026bed772a14f7fe736" target="_blanket">Book #4</a>
+<a href="https://berry-aries-40a.notion.site/Book-4-ac978d324d5a4026bed772a14f7fe736">Book #4</a>
 <br/>
-<a href="https://berry-aries-40a.notion.site/Book-5-80e448249e69440487a40391d235d643" target="_blanket">Book #5</a>
+<a href="https://berry-aries-40a.notion.site/Book-5-80e448249e69440487a40391d235d643">Book #5</a>
 <br/>
-<a href="https://berry-aries-40a.notion.site/Book-6-db56a83b6c2547c49e3c449236b2d855" target="_blanket">Book #6</a>
+<a href="https://berry-aries-40a.notion.site/Book-6-db56a83b6c2547c49e3c449236b2d855">Book #6</a>
 <br/>
-<a href="https://berry-aries-40a.notion.site/Book-7-5d8cd491958a4551a48ea6d8cb56841b" target="_blanket">Book #7</a>
+<a href="https://berry-aries-40a.notion.site/Book-7-5d8cd491958a4551a48ea6d8cb56841b">Book #7</a>
 
 ## 📁 폴더 구조
 - client : FrontEnd로 화면 구성을 위해 pages, 공통 components로 구성되어있습니다.
@@ -77,7 +77,6 @@ npm run build
 
 #### deploy
 ```
-not yet
 ```
 
 

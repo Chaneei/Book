@@ -24,7 +24,7 @@
 
 ## 🔥 Introducing Project
 #### 📑 내가 읽은 책의 독후감을 써보자
-🔓 DB관리는 MySQL로 , Backend는 node.js와 express.js로! Frontend는 React로! 
+🔓 DB관리는 MySQL로 , Backend는 node.js로! Frontend는 React로! 
 
 #### 📙 내가 읽었던 책에 대한 기록을 남기자 
 평소 읽었던 책을 읽고 지나치지말고 나만의 독후감을 담는 토이프로젝트를 진행해보았습니다.
